@@ -7,6 +7,7 @@ import './globals.css';
 
 // components
 import Prenav from '@/components/Prenav/Prenav';
+import Nav from '@/components/Nav/Nav';
 
 const openSans = Open_Sans({
   weight: ['400', '500', '600', '800'],
@@ -35,7 +36,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
       <></>
       <body className={openSans.className}>
         <Prenav />
-        {/* <Nav /> */}
+        <Nav />
         {children}
       </body>
     </html>
