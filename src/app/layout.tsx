@@ -1,6 +1,12 @@
-import './globals.css';
+// next react
 import type { Metadata } from 'next';
 import { Open_Sans, Poppins } from 'next/font/google';
+
+// styles
+import './globals.css';
+
+// components
+import Prenav from '@/components/Prenav/Prenav';
 
 const openSans = Open_Sans({
   weight: ['400', '500', '600', '800'],
@@ -29,7 +35,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
       <></>
       <body className={openSans.className}>
         <Prenav />
-        <Nav />
+        {/* <Nav /> */}
         {children}
       </body>
     </html>
