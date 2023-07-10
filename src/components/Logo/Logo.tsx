@@ -17,7 +17,7 @@ function Logo({ theme, width, height, className }: LogoProps) {
         width={width}
         height={height}
         className={className}
-        style={{ cursor: 'pointer', paddingBottom: '10px' }}
+        style={{ cursor: 'pointer' }}
       />
     </Link>
   );
