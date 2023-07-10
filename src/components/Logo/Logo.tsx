@@ -1,14 +1,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-function Logo() {
+interface LogoProps {
+  theme?: string;
+  width: number;
+  height: number;
+  className?: string;
+}
+
+function Logo({ theme, width, height, className }: LogoProps) {
   return (
     <Link href="/">
       <Image
-        src="/logo_dark.png"
-        alt="Classe Conseil - logo"
-        width={80}
-        height={85}
+        src={theme === 'light' ? '/logo_light.png' : '/logo_dark.png'}
+        alt="C.L.A.S.S.E. Conseil - Logo"
+        width={width}
+        height={height}
+        className={className}
         style={{ cursor: 'pointer', paddingBottom: '10px' }}
       />
     </Link>

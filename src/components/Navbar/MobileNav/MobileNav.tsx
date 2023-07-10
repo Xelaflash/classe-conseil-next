@@ -20,7 +20,7 @@ function MobileNav() {
 
   return (
     <nav className={styles.mobile_nav}>
-      <Logo />
+      <Logo width={80} height={85} />
       <button
         className={` ${styles.hamburger} ${styles.hamburger_collapse} ${
           styles.front_position
@@ -34,11 +34,10 @@ function MobileNav() {
         </span>
       </button>
       <div className={`${styles.sidenav} ${isOpen ? styles.show_sidenav : ''}`}>
-        <Image
-          src="/logo_light.png"
+        <Logo
+          theme="light"
           width={110}
           height={110}
-          alt="C.L.A.S.S.E. Conseil - Logo"
           className={styles.sidenav_logo}
         />
         <ul>
