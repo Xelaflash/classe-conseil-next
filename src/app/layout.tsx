@@ -7,12 +7,13 @@ import './globals.css';
 
 // components
 import Prenav from '@/components/Prenav/Prenav';
-import Nav from '@/components/Nav/Nav';
+import Navbar from '@/components/Navbar/Navbar';
 
 const openSans = Open_Sans({
   weight: ['400', '500', '600', '800'],
   subsets: ['latin'],
 });
+0;
 const poppins = Poppins({
   weight: ['400', '500', '600', '800'],
   subsets: ['latin'],
@@ -33,10 +34,9 @@ function RootLayout({ children }: { children: React.ReactNode }) {
         '--font-poppins': poppins.style.fontFamily,
       }}
     >
-      <></>
       <body className={openSans.className}>
         <Prenav />
-        <Nav />
+        <Navbar />
         {children}
       </body>
     </html>
