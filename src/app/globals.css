@@ -14,6 +14,8 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  color: var(--color-gray);
+  font-family: var(--font-openSans), sans-serif;
 }
 img,
 picture,
@@ -77,6 +79,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-poppins), sans-serif;
+  color: var(--color-dark-red);
 }
 
 /* Remove default button styles */
@@ -89,4 +92,70 @@ button {
   text-align: left;
   font: inherit;
   color: inherit;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    max-width: calc(100% - 30px);
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+.section {
+  padding: 20px 0 50px;
+}
+
+.section_title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: var(--font-poppins), sans-serif;
+  margin: 10px auto 5px auto;
+  letter-spacing: 1px;
+}
+
+.mini_title {
+  color: var(--color-gray);
+  font-style: italic;
+  font-size: 22px;
+  text-align: center;
+  margin: 0px auto 5px auto;
 }
