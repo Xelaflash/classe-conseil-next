@@ -29,7 +29,7 @@ export default function Presentation() {
         className={`parallax ${styles.presentation_banner}`}
         style={{
           backgroundImage:
-            'linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url(https://res.cloudinary.com/dqszntd5j/image/upload/v1594831935/presentation.jpg);',
+            'linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.2)), url(https://res.cloudinary.com/dqszntd5j/image/upload/v1594831935/presentation.jpg)',
         }}
       >
         <div className="banner_title_wrapper">
@@ -43,8 +43,8 @@ export default function Presentation() {
         <div className={styles.bio}>
           <h2>C.L.A.S.S.E. CONSEIL</h2>
           <p>
-            Acronyme désignant l'ensemble des secteurs d'activités couvert par
-            l'enseigne commerciale
+            Acronyme désignant l&apos;ensemble des secteurs d&apos;activités
+            couvert par l&apos;enseigne commerciale
           </p>
           <ul className={styles.acronym}>
             <li>Collectivité</li>
@@ -60,17 +60,17 @@ export default function Presentation() {
             Dirigeante de CLASSE Conseil depuis 1992.
           </h3>
           <p>
-            Très sensibilisée aux problématiques de l’optimisation des pratiques
-            professionnelles{' '}
+            Très sensibilisée aux problématiques de l&apos;optimisation des
+            pratiques professionnelles{' '}
             <strong>
               en lien avec le développement personnel des individus en situation
               de travail
             </strong>
-            , je milite et m’investis dans{' '}
+            , je milite et m&apos;investis dans{' '}
             <strong>
               le bien-être au travail et la qualité de vie au travail
             </strong>{' '}
-            comme principal levier de l’épanouissement personnel et de la
+            comme principal levier de l&apos;épanouissement personnel et de la
             performance collective.
           </p>
           <div className="separator_gradient margin_50"></div>
@@ -79,10 +79,11 @@ export default function Presentation() {
               Points forts
             </h3>
             <p>
-              Une expertise dans les techniques de l’accompagnement individuel
-              et/ou collectif construite sur 28 années d’exercice professionnel
-              et une connaissance approfondie des problématiques
-              professionnelles dans des contextes stables et instables.
+              Une expertise dans les techniques de l&apos;accompagnement
+              individuel et/ou collectif construite sur 28 années
+              d&apos;exercice professionnel et une connaissance approfondie des
+              problématiques professionnelles dans des contextes stables et
+              instables.
             </p>
           </div>
           <div className={styles.about_item} id="missions">
@@ -101,7 +102,7 @@ export default function Presentation() {
               avec eux des actions individuelles ou collectives adaptées. Nous
               conduisons les actions confiées avec le plus grand soin et la même
               démarche déontologique: une obligation de moyens pour une
-              obligation de résultat. Quelque soit le secteur d'activité
+              obligation de résultat. Quelque soit le secteur d&apos;activité
               concerné, nous instaurons une relation de confiance avec nos
               clients et nous nous engageons dans une relation partenariale
               durable.
@@ -120,12 +121,12 @@ export default function Presentation() {
                 <li>Animation de séminaire en résidentiel</li>
                 <li>Analyse des pratiques professionnelles</li>
                 <li>Accompagnement au changement</li>
-                <li>Accompagnement à l'élaboration de projets</li>
+                <li>Accompagnement à l&apos;élaboration de projets</li>
                 <li>
-                  Accompagnement à la démarche d'évaluation et de prévention des
-                  RPS
+                  Accompagnement à la démarche d&apos;évaluation et de
+                  prévention des RPS
                 </li>
-                <li>Coaching individuel et d'équipe</li>
+                <li>Coaching individuel et d&apos;équipe</li>
               </ul>
             </div>
             <p>

@@ -1,0 +1,148 @@
+.pratique_pro_banner {
+  background-position: center;
+  background-size: cover;
+  background-color: black;
+}
+
+.pratique_pro_page {
+  counter-reset: title;
+
+  h4 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: var(--color-gray);
+  }
+}
+
+.pratique_pro_title {
+  position: relative;
+  counter-increment: title;
+  font-size: 1.2rem;
+  margin: 1.75rem 2rem;
+  padding-left: 2.5rem;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.pratique_pro_title:before {
+  content: counter(title) '.';
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  top: -1.1rem;
+  left: -1rem;
+  font-size: 1.1em;
+  padding: 0.15em 0.25em;
+  background: var(--color-dark-red);
+  color: var(--color-white);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.analysis_wrapper,
+.process_wrapper,
+.tools_wrapper {
+  ul {
+    margin: 15px auto 15px 50px;
+    line-height: 1.8em;
+  }
+}
+
+.process_wrapper {
+  margin: 10px auto;
+}
+
+.accordion_wrapper {
+  margin: 50px auto;
+  width: 90%;
+}
+
+// accordion
+.accordion {
+  background-color: var(--color-dark-red);
+  font-family: var(--font-openSans);
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: var(--color-white);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  font-weight: bold;
+  border: 1px solid white;
+  text-align: left;
+
+  &::after {
+    content: '\276F';
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-white);
+    float: right;
+    margin-left: 5px;
+    transition: 0.35s ease;
+  }
+}
+
+.first_child {
+  border-radius: 8px 8px 0 0;
+}
+
+.last_child {
+  border-radius: 0 0 8px 8px;
+}
+
+.accordion_active:after {
+  content: '\276F';
+  transform: rotate(90deg);
+}
+
+.accordion_active,
+.accordion:hover {
+  background-color: #9e002c;
+}
+
+.accordion_panel {
+  padding: 0 20px;
+  background-color: var(--color-white);
+}
+
+.contentWrapper {
+  padding: 1rem 0;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 812px) {
+  .analysis-wrapper,
+  .process-wrapper,
+  .tools-wrapper {
+    ul {
+      margin: 15px auto;
+    }
+  }
+
+  .accordion-wrapper {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .pratique_pro-page {
+    max-width: 900px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  .analysis-wrapper,
+  .process-wrapper,
+  .tools-wrapper {
+    ul {
+      font-size: 15px;
+    }
+  }
+}
