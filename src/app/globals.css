@@ -82,6 +82,10 @@ h6 {
   color: var(--color-dark-red);
 }
 
+h1 {
+  letter-spacing: 0.1em;
+}
+
 /* Remove default button styles */
 button {
   margin: 0;
@@ -100,6 +104,39 @@ button {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.section {
+  padding: 20px 0 50px;
+}
+
+.section_title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: var(--font-poppins), sans-serif;
+  margin: 10px auto 5px auto;
+  letter-spacing: 1px;
+}
+
+.mini_title {
+  color: var(--color-gray);
+  font-style: italic;
+  font-size: 22px;
+  text-align: center;
+  margin: 0px auto 5px auto;
+}
+
+.separator_gradient {
+  height: 5px;
+  position: relative;
+  width: 80%;
+  background: radial-gradient(
+    ellipse farthest-side at top center,
+    #6b001e,
+    transparent
+  );
+  margin: auto;
 }
 
 @media (min-width: 768px) {
@@ -137,25 +174,4 @@ button {
   .container {
     max-width: 1140px;
   }
-}
-
-.section {
-  padding: 20px 0 50px;
-}
-
-.section_title {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 400;
-  font-family: var(--font-poppins), sans-serif;
-  margin: 10px auto 5px auto;
-  letter-spacing: 1px;
-}
-
-.mini_title {
-  color: var(--color-gray);
-  font-style: italic;
-  font-size: 22px;
-  text-align: center;
-  margin: 0px auto 5px auto;
 }

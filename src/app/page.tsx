@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 
 // icons
@@ -7,6 +6,11 @@ import { Check } from 'react-feather';
 // styles
 import styles from './page.module.scss';
 import Logo from '@/components/Logo/Logo';
+
+// Components
+import HomeCard from '@/components/HomeCard/HomeCard';
+import Reinsurance from '@/components/Reinsurance/Reinsurance';
+import HomeCarousel from '@/components/HomeCarousel/HomeCarousel';
 
 export default function Home() {
   return (
@@ -69,6 +73,61 @@ export default function Home() {
             </div>
           </div>
         </div>
+      </section>
+
+      <div className="separator_gradient"></div>
+
+      <section className="section container">
+        <p className="mini_title">Services</p>
+        <h2 className="section_title">Processus</h2>
+        <div className={styles.services_cards_wrapper}>
+          <HomeCard
+            href="/pratiques_professionnelles.html#analysis-anchor"
+            header="Analyser vos besoins"
+            body="Pour comprendre la demande et se fixer un but"
+            icon="TrendingUp"
+          />
+          <HomeCard
+            href="/pratiques_professionnelles.html#process-anchor"
+            header="Définir la démarche"
+            body="Écrire les objectifs et poser le cadre"
+            icon="Cogs"
+          />
+          <HomeCard
+            href="/pratiques_professionnelles.html#tools-anchor"
+            header="Choisir les outils"
+            body="En fonction des objectifs et des situations traitées"
+            icon="Tool"
+          />
+        </div>
+      </section>
+
+      <div className="separator_gradient"></div>
+
+      <section className="section container">
+        <p className="mini_title">Expertise</p>
+        <h2 className="section_title">Travailler ensemble</h2>
+        <div className={styles.reinsurance_wrapper}>
+          <Reinsurance />
+        </div>
+
+        <div className={styles.cta_catalogue}>
+          <p>
+            Consulter le{' '}
+            <Link href="/formations" className={styles.cta_catalogue_link}>
+              catalogue de formations
+            </Link>{' '}
+            pour plus d&apos;informations.
+          </p>
+        </div>
+      </section>
+
+      <div className="separator_gradient"></div>
+
+      <section className="section container">
+        <p className="mini_title">Clients</p>
+        <h2 className="section_title">Ils nous font confiance</h2>
+        <HomeCarousel />
       </section>
     </main>
   );

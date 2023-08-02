@@ -11,7 +11,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import Footer from '@/components/Footer/Footer';
 
 const openSans = Open_Sans({
-  weight: ['400', '500', '600', '800'],
+  weight: ['300', '400', '500', '600', '800'],
   subsets: ['latin'],
 });
 0;

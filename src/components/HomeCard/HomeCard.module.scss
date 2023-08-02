@@ -1,0 +1,74 @@
+.card_full_link {
+  text-decoration: none;
+  color: var(--color-gray);
+}
+
+.services_card {
+  box-sizing: content-box;
+  font-size: 14px;
+  font-weight: 300;
+  width: 250px;
+  height: 300px;
+  background: var(--color-light-gray);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 7px 6px 15px -5px rgba(0, 0, 0, 0.6);
+  transition: transform 0.15s linear;
+  margin: 20px;
+
+  h3 {
+    margin: 1em 0;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 7px 6px 15px -5px rgba(0, 0, 0, 1);
+  }
+}
+
+.icons_wrapper {
+  width: 80px;
+  height: 80px;
+  display: block;
+  border-radius: 50px;
+  font-size: 32px;
+  background: var(--color-dark-red);
+  position: relative;
+  margin: auto;
+
+  .icons {
+    position: absolute;
+    color: var(--color-white);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.card_text {
+  margin: 40px auto;
+  min-height: 50px;
+}
+
+.sep_card {
+  width: 90%;
+  text-align: center;
+  margin: 40px auto 20px;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.card_links {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--color-gray);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

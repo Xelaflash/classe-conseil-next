@@ -200,79 +200,7 @@
   flex-wrap: wrap;
 }
 
-.card_full_link {
-  text-decoration: none;
-  color: var(--color-gray);
-}
-
-.services_card {
-  font-size: 14px;
-  font-weight: lighter;
-  width: 250px;
-  height: 300px;
-  background: var(--color-light-gray);
-  border-radius: 10px;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 7px 6px 15px -5px rgba(0, 0, 0, 0.6);
-  transition: transform 0.15s linear;
-  margin: 20px;
-
-  &:hover {
-    transform: scale(1.1);
-    box-shadow: 7px 6px 15px -5px rgba(0, 0, 0, 1);
-  }
-}
-
-.icons {
-  width: 80px;
-  height: 80px;
-  display: block;
-  border-radius: 50px;
-  font-size: 32px;
-  background: var(--color-dark-red);
-  position: relative;
-  margin: auto;
-
-  i {
-    position: absolute;
-    color: var(--color-white);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-.card_text {
-  margin: 40px auto;
-  min-height: 50px;
-}
-
-.sep_card {
-  width: 90%;
-  text-align: center;
-  margin: 40px auto 20px;
-  border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.card_links {
-  text-decoration: none;
-  font-size: 14px;
-  color: var(--color-gray);
-
-  &:hover {
-    text-decoration: underline;
-  }
-
-  .fa-arrow-right {
-    padding-left: 5px;
-    font-size: 13px;
-  }
-}
-
-// reinsurance section v1 circle neomorphism
-.reinsurance-wrapper {
+.reinsurance_wrapper {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -281,47 +209,7 @@
   width: fit-content;
 }
 
-.reinsurance-items {
-  width: 180px;
-}
-
-.reinsurance-pastille {
-  width: 80px;
-  height: 80px;
-  display: block;
-  border-radius: 50%;
-  background: var(--color-dark-red);
-  position: relative;
-  box-shadow: inset 7px -7px 10px rgba(89, 0, 25, 0.4),
-    inset -7px 7px 10px #7d0023;
-  margin: auto;
-
-  i {
-    font-size: 30px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--color-white);
-  }
-}
-
-.reinsurance-items-inner {
-  text-align: center;
-
-  .nbr {
-    font-weight: bolder;
-    font-size: 22px;
-    margin: 10px auto 0;
-    color: var(--color-dark-red);
-  }
-
-  .reinsurance-text {
-    margin-top: 0;
-  }
-}
-
-.cta-catalogue {
+.cta_catalogue {
   text-align: center;
 
   a {
@@ -342,11 +230,11 @@
     padding: 0;
   }
 
-  .quote-wrapper {
+  .quote_wrapper {
     margin: 0 auto 20px auto;
   }
 
-  .quote-text {
+  .quote_text {
     p {
       margin: 0 auto;
       padding: 0;
