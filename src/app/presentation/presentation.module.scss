@@ -72,7 +72,7 @@
   letter-spacing: 2px;
 }
 
-#pratiques_pro {
+.pratiques_pro {
   width: 100%;
 
   a {
@@ -91,6 +91,14 @@
     max-width: 800px;
     display: inline-block;
     list-style: inside;
+  }
+
+  a {
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 

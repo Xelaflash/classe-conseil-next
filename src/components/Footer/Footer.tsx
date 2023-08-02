@@ -26,7 +26,7 @@ const footerLinks = [
       },
       {
         label: 'Pratiques Professionnelles',
-        url: '/presentation.html#pratiques_pro',
+        url: '/presentation#pratiques_pro',
         id: crypto.randomUUID(),
       },
       {

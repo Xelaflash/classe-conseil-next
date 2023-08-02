@@ -75,7 +75,9 @@ export default function Presentation() {
           </p>
           <div className="separator_gradient margin_50"></div>
           <div className={styles.about_item}>
-            <h3 className={styles.about_item_title}>Points forts</h3>
+            <h3 className={styles.about_item_title} id="points-fort">
+              Points forts
+            </h3>
             <p>
               Une expertise dans les techniques de l’accompagnement individuel
               et/ou collectif construite sur 28 années d’exercice professionnel
@@ -83,7 +85,7 @@ export default function Presentation() {
               professionnelles dans des contextes stables et instables.
             </p>
           </div>
-          <div className={styles.about_item}>
+          <div className={styles.about_item} id="missions">
             <h3 className={styles.about_item_title}>Missions majeures</h3>
             <p>
               Spécialisée dans le <strong>développement des compétences</strong>{' '}
@@ -105,7 +107,10 @@ export default function Presentation() {
               durable.
             </p>
           </div>
-          <div className={styles.about_item} id={styles.pratiques_pro}>
+          <div
+            className={`${styles.about_item} ${styles.pratiques_pro}`}
+            id="pratiques_pro"
+          >
             <h3 className={styles.about_item_title}>
               Pratiques professionnelles
             </h3>
@@ -134,7 +139,7 @@ export default function Presentation() {
           </div>
         </div>
         <div className="separator_gradient margin_50"></div>
-        <div className="references">
+        <div className="references" id="diplomas">
           <div className={styles.diploma}>
             <h3 className={styles.about_item_title}>Diplômes & Habilitation</h3>
             <ul className={styles.diploma_list}>
