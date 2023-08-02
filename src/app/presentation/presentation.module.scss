@@ -1,0 +1,220 @@
+.presentation_banner {
+  background-position: bottom;
+}
+
+.bio {
+  p,
+  ul {
+    margin: 15px auto;
+    line-height: 1.8em;
+    max-width: 800px;
+  }
+  h2 {
+    margin: 60px auto 10px auto;
+    text-align: center;
+  }
+}
+
+.acronym {
+  list-style: none;
+  width: fit-content;
+  padding: 0;
+
+  li {
+    line-height: 2em;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+
+  li::first-letter {
+    font-size: 150%;
+    font-weight: bold;
+    color: var(--color-dark-red);
+  }
+
+  li:nth-child(2) {
+    padding-left: 20px;
+  }
+
+  li:nth-child(3) {
+    padding-left: 40px;
+  }
+
+  li:nth-child(4) {
+    padding-left: 60px;
+  }
+
+  li:nth-child(5) {
+    padding-left: 80px;
+  }
+
+  li:nth-child(6) {
+    padding-left: 100px;
+  }
+}
+
+#job_title {
+  text-align: center;
+  font-size: 22px;
+  margin: 0 auto 50px auto;
+  font-weight: 600;
+}
+
+.about_item {
+  margin: 50px auto;
+}
+
+.about_item_title {
+  text-align: center;
+  text-decoration: underline;
+  margin: 40px auto;
+  font-size: 26px;
+  letter-spacing: 2px;
+}
+
+#pratiques_pro {
+  width: 100%;
+
+  a {
+    color: black;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.services_list_wrapper {
+  ul {
+    margin: 15px auto;
+    line-height: 1.8em;
+    max-width: 800px;
+    display: inline-block;
+    list-style: inside;
+  }
+}
+
+.diploma {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.diploma_list {
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+
+  li {
+    box-sizing: content-box;
+    position: relative;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.05),
+      0 0.5rem 1.125rem rgba(75, 0, 0, 0.05);
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    margin: 0.8rem;
+    padding: 1.5rem;
+    list-style: none;
+    text-align: center;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-light-gray);
+  }
+}
+
+.stamps {
+  width: 35px;
+  position: absolute;
+  top: -5px;
+  left: -15px;
+  transform: rotate(14deg);
+  opacity: 0.9;
+}
+
+.certif_wrapper {
+  margin: 80px auto;
+}
+
+#certif_title {
+  margin: 0 auto 20px auto;
+}
+
+.certif {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  margin-top: -15px;
+
+  p,
+  .certif_link {
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 auto;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.datadock,
+.qualiopi {
+  margin: 0 50px;
+  text-align: center;
+}
+
+.certif_logos {
+  margin: 10px auto;
+}
+
+#datadock_logo {
+  height: 100px;
+  width: auto;
+}
+
+#qualiopi_logo {
+  height: auto;
+  width: 200px;
+  margin: 40px auto;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 812px) {
+  #qualiopi_logo {
+    margin: 40px auto 10px;
+  }
+
+  .services_list_wrapper ul {
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .bio {
+    p,
+    ul {
+      text-align: justify;
+    }
+  }
+
+  .services_list_wrapper {
+    text-align: center;
+
+    ul {
+      text-align: justify;
+    }
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  #job_title {
+    font-size: 16px;
+  }
+
+  .services_list_wrapper {
+    ul {
+      font-size: 15px;
+    }
+  }
+}
