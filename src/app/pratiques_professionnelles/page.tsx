@@ -11,7 +11,7 @@ import ToolsAccordion from './ToolsAccordion';
 export const metadata: Metadata = {
   title: 'Pratiques Professionnelles - C.L.A.S.S.E. Conseil',
   description:
-    "Corine Pesier - classNameE CONSEIL - Présentation de l'entreprise et de ses activités. Développement des compétences, développement personnel, accompagnement collectif et individuel, formations, bilan professionnel, coaching, prévention des RPS, QVT",
+    "Corine Pesier - CLASSE CONSEIL - Présentation de l'entreprise et de ses activités. Développement des compétences, développement personnel, accompagnement collectif et individuel, formations, bilan professionnel, coaching, prévention des RPS, QVT",
 };
 
 export default function PratiquesPro() {

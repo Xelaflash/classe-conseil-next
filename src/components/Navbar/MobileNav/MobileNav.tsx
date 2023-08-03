@@ -19,7 +19,7 @@ function MobileNav() {
 
   return (
     <nav className={styles.mobile_nav}>
-      <Logo width={80} height={85} />
+      <Logo width={80} height={80} className={styles.nav_logo} />
       <button
         className={` ${styles.hamburger} ${styles.hamburger_collapse} ${
           styles.front_position
@@ -38,6 +38,7 @@ function MobileNav() {
           width={110}
           height={110}
           className={styles.sidenav_logo}
+          style={{ Zindex: 2 }}
         />
         <ul>
           {NAVLINKS.map((link) => {

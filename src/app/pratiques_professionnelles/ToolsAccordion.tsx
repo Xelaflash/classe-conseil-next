@@ -2,6 +2,7 @@
 
 import React from 'react';
 import styles from './PratiquesPro.module.scss';
+import classes from '../Accordion.module.scss';
 import { motion } from 'framer-motion';
 
 const accordionData = [
@@ -126,22 +127,22 @@ export default function ToolsAccordion() {
   };
 
   return (
-    <div className={styles.accordion_wrapper}>
+    <div className={classes.accordion_wrapper}>
       {accordionData.map((item, index) => (
-        <div className={styles.accordion_item} key={index}>
+        <div className={classes.accordion_item} key={index}>
           <button
-            className={`${styles.accordion} ${
-              index === 0 ? styles.first_child : ''
-            } ${index === accordionData.length - 1 ? styles.last_child : ''} ${
-              isPanelOpen(index) ? styles.accordion_active : ''
+            className={`${classes.accordion} ${
+              index === 0 ? classes.first_child : ''
+            } ${index === accordionData.length - 1 ? classes.last_child : ''} ${
+              isPanelOpen(index) ? classes.accordion_active : ''
             }`}
             onClick={() => handleAccordionClick(index)}
           >
             {item.title}
           </button>
           <motion.div
-            className={`${styles.accordion_panel} ${
-              isPanelOpen(index) ? styles.accordion_panel_active : ''
+            className={`${classes.accordion_panel} ${
+              isPanelOpen(index) ? classes.accordion_panel_active : ''
             }`}
             initial={{ height: 0, opacity: 0 }}
             animate={{
@@ -151,7 +152,7 @@ export default function ToolsAccordion() {
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             style={{ overflow: 'hidden' }}
           >
-            <div className={styles.contentWrapper}>
+            <div className={classes.contentWrapper}>
               <div dangerouslySetInnerHTML={{ __html: item.content }} />
             </div>
           </motion.div>

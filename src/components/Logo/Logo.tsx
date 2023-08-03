@@ -6,6 +6,7 @@ interface LogoProps {
   width: number;
   height: number;
   className?: string;
+  style?: string;
 }
 
 function Logo({ theme, width, height, className }: LogoProps) {
