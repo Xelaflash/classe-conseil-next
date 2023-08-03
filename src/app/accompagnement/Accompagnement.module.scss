@@ -1,0 +1,16 @@
+.accompagnement_banner {
+  background-position: bottom;
+}
+
+.accompagnement_wrapper {
+  ul {
+    margin: 20px auto;
+    line-height: 2em;
+  }
+}
+
+@media (max-width: 991px) {
+  #accompagnement_title {
+    font-size: 30px;
+  }
+}
