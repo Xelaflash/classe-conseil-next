@@ -1,8 +1,15 @@
 import React from 'react';
+import { Metadata } from 'next';
 
 // styles
 import styles from './Accompagnement.module.scss';
 import AccompagnementAccordion from './AccompagnementAccordion';
+
+export const metadata: Metadata = {
+  title: 'Accompagnement - C.L.A.S.S.E. Conseil',
+  description:
+    "Corine Pesier - CLASSE CONSEIL - Offres de prestations d'accompagnement professionnel. Développement des compétences, développement personnel, accompagnement collectif et individuel, bilan professionnel, coaching, prévention des RPS, QVT.",
+};
 
 export default function Accompagnement() {
   return (
