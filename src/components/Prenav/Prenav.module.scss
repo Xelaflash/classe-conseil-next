@@ -46,3 +46,9 @@
     justify-content: space-around;
   }
 }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .pre_navbar {
+    display: none !important;
+  }
+}

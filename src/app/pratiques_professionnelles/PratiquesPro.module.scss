@@ -85,3 +85,16 @@
     }
   }
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .pratique_pro_banner {
+    background-size: contain;
+  }
+}
+
+/* ipad landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .pratique_pro_banner {
+    background-size: cover;
+  }
+}

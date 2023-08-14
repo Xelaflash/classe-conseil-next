@@ -258,7 +258,7 @@
     margin: 0 auto 40px;
   }
 
-  .wrapper_left {
+  .wrapper_left img {
     text-align: center;
     margin: 20px auto 40px;
   }
@@ -283,6 +283,8 @@
 @media only screen and (min-width: 320px) and (max-width: 812px) {
   .banner {
     text-align: center;
+    justify-content: center;
+    padding-inline: 0;
 
     h1 {
       font-size: 32px;
@@ -347,6 +349,11 @@
   .banner .banner_text {
     margin-top: 15px;
     padding-bottom: 25px;
+
+    h2,
+    h3 {
+      width: 530px;
+    }
   }
 
   .btn_flat_outline {
@@ -379,6 +386,7 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
   .banner {
     text-align: center;
+    padding-inline: 10rem;
   }
 
   .page_title {

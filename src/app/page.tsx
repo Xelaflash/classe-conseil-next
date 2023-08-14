@@ -16,10 +16,10 @@ export default function Home() {
   return (
     <main>
       <section className={styles.banner}>
-        <div className={styles.banner_text}>
+        <div className={`${styles.banner_text}`}>
           <div className={styles.page_title}>
             <h1>C.L.A.S.S.E.</h1>
-            <span>CONSEIL</span>
+            <span id={styles.conseil}>CONSEIL</span>
           </div>
           <h2>Corine Pesier</h2>
           <h3>Psychologue, Consultante et Formatrice R.H. indépendante</h3>

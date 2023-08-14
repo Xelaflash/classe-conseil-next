@@ -28,6 +28,9 @@
 
   p {
     font-size: 13px;
+    @media (max-width: 991px) {
+      font-size: 12px;
+    }
   }
 }
 

@@ -13,6 +13,55 @@ import { NAVLINKS } from '@/utils/constants';
 // components
 import Logo from '@/components/Logo/Logo';
 import VisuallyHidden from '@/components/VisuallyHidden/VisuallyHidden';
+import useBodyScrollLock from '@/utils/useBodyScrollLock';
+
+interface MobileNavContentProps {
+  isOpen: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+function MobileNavContent({ isOpen, setOpen }: MobileNavContentProps) {
+  useBodyScrollLock();
+  return (
+    <div className={`${styles.sidenav} ${isOpen ? styles.show_sidenav : ''}`}>
+      <Logo
+        theme="light"
+        width={110}
+        height={110}
+        className={styles.sidenav_logo}
+        style={{ Zindex: 2 }}
+      />
+      <ul>
+        {NAVLINKS.map((link) => {
+          return (
+            <li key={link.href}>
+              <Link
+                href={link.href}
+                className={styles.sidenav_link}
+                onClick={() => setOpen(!isOpen)}
+              >
+                {link.label}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+      <div className={styles.social_wrapper}>
+        <div className={styles.social_links_sidenav}>
+          <Link
+            href="https://www.linkedin.com/in/corine-pesier-73975a5b/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.pre_nav_link}
+          >
+            <Linkedin size={32} />
+            <VisuallyHidden>Linkedin profile </VisuallyHidden>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function MobileNav() {
   const [isOpen, setOpen] = React.useState(false);
@@ -32,43 +81,7 @@ function MobileNav() {
           <span className={styles.hamburger_inner}></span>
         </span>
       </button>
-      <div className={`${styles.sidenav} ${isOpen ? styles.show_sidenav : ''}`}>
-        <Logo
-          theme="light"
-          width={110}
-          height={110}
-          className={styles.sidenav_logo}
-          style={{ Zindex: 2 }}
-        />
-        <ul>
-          {NAVLINKS.map((link) => {
-            return (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className={styles.sidenav_link}
-                  onClick={() => setOpen(!isOpen)}
-                >
-                  {link.label}
-                </Link>
-              </li>
-            );
-          })}
-        </ul>
-        <div className={styles.social_wrapper}>
-          <div className={styles.social_links_sidenav}>
-            <Link
-              href="https://www.linkedin.com/in/corine-pesier-73975a5b/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.pre_nav_link}
-            >
-              <Linkedin size={32} />
-              <VisuallyHidden>Linkedin profile </VisuallyHidden>
-            </Link>
-          </div>
-        </div>
-      </div>
+      {isOpen && <MobileNavContent isOpen={isOpen} setOpen={setOpen} />}
     </nav>
   );
 }

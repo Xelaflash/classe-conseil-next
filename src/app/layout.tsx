@@ -27,14 +27,13 @@ export const metadata: Metadata = {
 };
 
 function RootLayout({ children }: { children: React.ReactNode }) {
+  const styles = {
+    '--font-openSans': openSans.style.fontFamily,
+    '--font-poppins': poppins.style.fontFamily,
+  };
+
   return (
-    <html
-      lang="fr"
-      style={{
-        '--font-openSans': openSans.style.fontFamily,
-        '--font-poppins': poppins.style.fontFamily,
-      }}
-    >
+    <html lang="fr" style={styles}>
       <body className={openSans.className}>
         <Prenav />
         <Navbar />

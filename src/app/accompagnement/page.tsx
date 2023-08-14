@@ -22,7 +22,9 @@ export default function Accompagnement() {
         }}
       >
         <div className="banner_title_wrapper">
-          <h1 className="banner_title">Accompagnement</h1>
+          <h1 className="banner_title" id={styles.accompagnement_title}>
+            Accompagnement
+          </h1>
         </div>
       </div>
       <section className="section container">

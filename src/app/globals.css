@@ -190,6 +190,21 @@ button {
   border-radius: 5px;
 }
 
+.cgv {
+  margin: 60px auto;
+}
+
+.legal_page a {
+  color: var(--color-dark-gray);
+}
+
+/* IPADS */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .parallax {
+    height: 300px;
+  }
+}
+
 @media (max-width: 991px) {
   .banner_title {
     font-size: 32px;
@@ -201,6 +216,178 @@ button {
     padding-left: 40px;
   }
 }
+
+/* All mobile */
+@media only screen and (min-device-width: 320px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+/* phones */
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) {
+  .parallax {
+    height: 250px;
+  }
+
+  .banner_title_wrapper {
+    padding: 180px 0 0 20px;
+  }
+
+  .section_title {
+    font-size: 30px;
+  }
+}
+
+/* phone landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .parallax {
+    height: 200px;
+  }
+
+  .banner_title_wrapper {
+    padding: 120px 0 0 15px;
+  }
+}
+
+/* Error pages */
+.error_page_wrapper {
+  position: relative;
+  min-height: calc(100vh - 130px);
+}
+
+.error_page_wrapper .error {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.error {
+  max-width: 520px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.error .notfound {
+  position: relative;
+  height: 200px;
+  margin: 0px auto 20px;
+  z-index: -1;
+}
+
+.error .notfound h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 236px;
+  font-weight: 200;
+  margin: 0px;
+  color: #211b19;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0;
+}
+
+.error .notfound h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #211b19;
+  background: var(--color-white);
+  padding: 10px 5px;
+  margin: auto;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+}
+
+.error a {
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-white);
+  text-transform: uppercase;
+  padding: 13px 23px;
+  background: var(--color-dark-red);
+  font-size: 16px;
+  transition: all 0.2s ease;
+  border: 1px solid var(--color-dark-red);
+  border-radius: 5px;
+}
+
+.error a:hover {
+  color: var(--color-dark-red);
+  background: var(--color-white);
+  border: 1px solid var(--color-dark-red);
+}
+
+@media only screen and (max-width: 767px) {
+  .error .notfound h1 {
+    font-size: 148px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .error .notfound {
+    height: 148px;
+    margin: 0px auto 10px;
+  }
+
+  .error .notfound h1 {
+    font-size: 90px;
+  }
+
+  .error .notfound h2 {
+    font-size: 16px;
+  }
+
+  .notfound a {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+/* phones */
+@media only screen and (min-device-width: 320px) and (max-device-width: 811px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .error_page_wrapper {
+    height: calc(100vh - 80px);
+  }
+
+  .notfound .notfound h2 {
+    bottom: 10%;
+    left: 20%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 811px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .error_page_wrapper {
+    min-height: calc(100vh - 80px);
+  }
+
+  .error .notfound h2 {
+    left: 12%;
+    top: 65%;
+  }
+}
+
+/* ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .error .notfound h1 {
+    font-size: 200px;
+  }
+
+  .error .notfound h2 {
+    left: 10%;
+  }
+}
+
+/* Responsive */
 
 @media (min-width: 768px) {
   .row {
