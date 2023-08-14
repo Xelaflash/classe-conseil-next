@@ -406,7 +406,7 @@ export default function Legals() {
           RGPD), de mise à jour, de complétude des données des Utilisateurs
           droit de verrouillage ou d’effacement des données des Utilisateurs à
           caractère personnel (article 17 du RGPD), lorsqu’elles sont inexactes,
-          incomplètes, équivoques, périmées, ou dont la collecte, l'utilisation,
+          incomplètes, équivoques, périmées, ou dont la collecte, l’utilisation,
           la communication ou la conservation est interdite{' '}
         </li>
         &nbsp;

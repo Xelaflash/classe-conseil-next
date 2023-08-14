@@ -30,7 +30,7 @@ function RootLayout({ children }: { children: React.ReactNode }) {
   const styles = {
     '--font-openSans': openSans.style.fontFamily,
     '--font-poppins': poppins.style.fontFamily,
-  };
+  } as React.CSSProperties;
 
   return (
     <html lang="fr" style={styles}>
