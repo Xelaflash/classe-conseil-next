@@ -26,7 +26,7 @@ export default function HomeCarousel() {
       name: 'CHU',
     },
     {
-      url: 'https://res.cloudinary.com/dqszntd5j/image/upload/v1594648340/logo-cpam.jpg ',
+      url: 'https://res.cloudinary.com/dqszntd5j/image/upload/v1594648340/logo-cpam.jpg',
       name: 'CPAM',
     },
     {

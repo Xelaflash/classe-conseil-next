@@ -17,7 +17,7 @@ function Nav() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.nav_wrapper}>
-        <Logo width={80} height={85} className={styles.logo_nav} />
+        <Logo width={80} height={80} className={styles.logo_nav} />
         <div className={styles.navbar_middle}>
           <ul className={styles.nav_list}>
             {NAVLINKS.map((link) => {
