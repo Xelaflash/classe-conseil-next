@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import { Metadata } from 'next';
 // icons
 import { Check } from 'react-feather';
 
@@ -11,6 +11,24 @@ import Logo from '@/components/Logo/Logo';
 import HomeCard from '@/components/HomeCard/HomeCard';
 import Reinsurance from '@/components/Reinsurance/Reinsurance';
 import HomeCarousel from '@/components/HomeCarousel/HomeCarousel';
+
+export const metadata: Metadata = {
+  title:
+    'Corine Pesier - CLASSE CONSEIL - Psychologue Clinicienne, Formatrice et Consultante Ressources Humaines, IPRP',
+  description:
+    'Corine Pesier - CLASSE CONSEIL - Développement des compétences, développement personnel, accompagnement collectif et individuel, formations, bilan professionnel, coaching, prévention des RPS, QVT',
+  keywords: [
+    'CLASSE CONSEIL',
+    'Ressources Humaines',
+    'Développement',
+    'formations',
+    'accompagnement',
+    'bilan de compétences',
+    'coaching',
+    'prévention des RPS',
+    'QVT',
+  ],
+};
 
 export default function Home() {
   return (

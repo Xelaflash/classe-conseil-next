@@ -21,9 +21,22 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'C.L.A.S.S.E. Conseil (Formation & Bilan de compétences)',
+  metadataBase: new URL('https://www.classe-conseil.fr/'),
+  title:
+    'Corine Pesier - CLASSE CONSEIL - Psychologue Clinicienne, Formatrice et Consultante Ressources Humaines, IPRP',
   description:
     'Corine Pesier - CLASSE CONSEIL - Développement des compétences, développement personnel, accompagnement collectif et individuel, formations, bilan professionnel, coaching, prévention des RPS, QVT',
+  keywords: [
+    'CLASSE CONSEIL',
+    'Ressources Humaines',
+    'Développement',
+    'formations',
+    'accompagnement',
+    'bilan de compétences',
+    'coaching',
+    'prévention des RPS',
+    'QVT',
+  ],
 };
 
 function RootLayout({ children }: { children: React.ReactNode }) {
