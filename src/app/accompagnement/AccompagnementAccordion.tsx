@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import * as React from 'react';
 // styles
 import classes from '../Accordion.module.scss';
 import '../formations/formations.scss';
